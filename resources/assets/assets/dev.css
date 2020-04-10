@@ -1,0 +1,67 @@
+
+textarea#comment::placeholder {
+    color: #9B9BA1;
+}
+.error{
+    color: #FF0000 !important;
+    font-size:12px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.modal-cont{
+    text-align: center;
+}
+
+.small-input {
+    -moz-appearance: textfield;
+}
+.small-input::-webkit-inner-spin-button {
+    display: none;
+}
+.small-input::-webkit-outer-spin-button,
+.small-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://dashboard.dr-iq.com/assets/img/dr-iq.gif') center no-repeat #fff; }
+.med-tab-select {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+.med-tab-select li{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 6px;
+    color: #9b9b9b;
+    border-top: 1px solid #d4d4d4;
+}
+.med-tab-select li:hover{
+    background: #fafafa;
+}
+.arrow-med
+{
+    position: absolute;
+    right: 2%;
+    top: 19%;
+
+}
+.btn:hover
+{
+  box-shadow: transparent !important;
+}
