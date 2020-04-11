@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $command="curl --location --request POST 'https://qa-driq-server.attech-ltd.com/v3/dr-iq/login_check' \
         --header 'Content-Type: application/x-www-form-urlencoded' \
-        --header 'deviceid: xxxRxxx' \
+        --header 'deviceid: FFFCF117-7466-4622-9351-1CF95C654268' \
         --header 'Content-Type: application/x-www-form-urlencoded' \
         --data-urlencode '_username=r.chughtai@yopmail.com' \
         --data-urlencode '_password=Ruuuuuu1@' 2>&1";
