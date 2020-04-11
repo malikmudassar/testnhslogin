@@ -24,14 +24,24 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('return2');
+        $command="curl --location --request POST 'https://qa-driq-server.attech-ltd.com/v3/dr-iq/login_check' \
+        --header 'Content-Type: application/x-www-form-urlencoded' \
+        --header 'deviceid: xxxRxxx' \
+        --header 'Content-Type: application/x-www-form-urlencoded' \
+        --data-urlencode '_username=r.chughtai@yopmail.com' \
+        --data-urlencode '_password=Ruuuuuu1@' 2>&1";
+        exec($command, $output);
+        echo (json_decode($output[3])->token);
+        // return view('return2');
     }
 
     public function callback(Request $request)
     {
+        
+        
         return redirect('home');
         // Sending mock response instead
-        
+
         // if (! empty($request->get('error'))) 
         // {
         //     abort(500, $request->get('error_description'));
@@ -52,6 +62,7 @@ class HomeController extends Controller
         // abort(403, 'access denied');
     }
 
+    
     public function tokenget(Request $request)
     {
         $path='/var/www/html/testnhslogin/resources/assets/';

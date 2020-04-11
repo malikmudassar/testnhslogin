@@ -19,11 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/token', 'HomeController@tokenget');
-
+Route::get('/jwttest', 'HomeController@testJWT');
 Route::get('/redirect', function () {
     $query = http_build_query([
         'client_id' => 'DrIQ',
-        'redirect_uri' => 'http://localhost/testnhslogin/api/callback',
+        'redirect_uri' => 'http://'.$_SERVER['SERVER_NAME'].'/testnhslogin/api/callback',
         'response_type' => 'code',
         'scope' =>  'openid profile',
         'state' =>  'appstate',
